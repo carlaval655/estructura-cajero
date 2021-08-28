@@ -1,14 +1,20 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package bo.edu.ucb.est;
 
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
 /**
- * Hello world!
  *
+ * @author Windows
  */
-public class App 
-{
+public class Main {
     public static void main( String[] args )
     {
-        System.out.println("Hello world");
         Cliente c1 = new Cliente ("Juan Perez","jperez",3333);
         
         Cliente c2 = new Cliente ("Maria Gomez","mgomez",4444);
@@ -26,8 +32,9 @@ public class App
         
         Entrada e = new Entrada();
         int validacion=0;
+        
         do{
-           validacion=e.validarIngreso();
+           validacion = e.validarIngreso();;
         }
         while (validacion==0);
         
