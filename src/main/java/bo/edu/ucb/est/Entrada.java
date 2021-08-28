@@ -50,6 +50,8 @@ public class Entrada {
                 if (c3.getCodigoCliente().equals(codCli) && c3.getPin()==pin){
                     flag = 3;
                 }
+		else
+                	System.out.println("Introduzca un código de cliente y pin correctos.");
             }
         }
         return flag;
